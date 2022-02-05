@@ -1,0 +1,185 @@
+#titulo {
+    color: tomato;
+}
+
+/* A todas las etiquetas de p con la clase texto */
+p.texto {
+    color: slateblue;
+}
+
+p.especial {
+    color: mediumseagreen;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    /* color: black; */
+    /* Si hay 
+    etiquetas que ya tengan un color, 
+    el selector universal ya no los podrá cambiar */
+}
+
+.color {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+    /* border: 3px #f00 outset; */
+    /*
+        solid
+        dashed
+        dotted
+        double
+        none
+        hidden
+
+        ==== elementos tridimencionales
+        groove
+        ridge
+        inset
+        outset
+    */
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+    /* opacity: 0.3; <- esta le da transparencia al elemento completo */
+    height: 200px;
+    /* Manera más corta de darle valores al background */
+    background: #f00 url(../img/img.jpg) repeat-y center bottom / 100px 100px;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    /* primero: top, segundo: right, tercero: bottom, cuarto: left */
+    /* padding: 30px 25px 20px 15px; */
+    border: 1px solid #000;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red; 
+}
+
+.text {
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px red;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estos metodos deben ir en este orden */
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    /* para quitar los espacios en la tabla */
+    border-collapse: collapse;
+}
+
+th, td {
+     border: 1px solid #eee;
+     padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    /* este es para marcar el ancho 
+    maximo pero si es menor, cambiara automaticamente */
+    max-width: 300px;
+    background-color: red;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    /* fixed ayuda a los menus o navbar a que siempre bajen conforme el scroll */
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    /* inline-block permite cambiar el ancho y alto */
+    display: inline-block;
+    height: 55px;
+    background-color: #f00;
+}
+
+.center {
+    padding: 50px 0;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+/* Los cambios que estén al final tendrán prioridad en los estilos */
